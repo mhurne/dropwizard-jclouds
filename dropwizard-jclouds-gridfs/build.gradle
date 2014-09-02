@@ -4,3 +4,14 @@ dependencies {
     compile "com.commercehub.jackson:jackson-datatype-mongo:1.0.0"
     runtime "com.commercehub.jclouds:jclouds-gridfs-blobstore:1.4.0"
 }
+
+bintray {
+    pkg {
+        name = "dropwizard-jclouds-gridfs"
+        desc = "A library that supports use of the Apache jclouds® MongoDB GridFS BlobStore provider in Dropwizard applications."
+        labels = ["dropwizard", "jclouds", "mongodb"]
+    }
+}
+
+bintrayUpload.dependsOn build, sourcesJar, javadocJar
+createReleaseTag.dependsOn bintrayUpload

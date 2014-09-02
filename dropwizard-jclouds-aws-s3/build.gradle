@@ -3,3 +3,14 @@ dependencies {
     compile "org.apache.jclouds.driver:jclouds-slf4j:1.8.0"
     runtime "org.apache.jclouds.provider:aws-s3:1.8.0"
 }
+
+bintray {
+    pkg {
+        name = "dropwizard-jclouds-aws-s3"
+        desc = "A library that supports use of the Apache jclouds® aws-s3 BlobStore provider in Dropwizard applications."
+        labels = ["dropwizard", "jclouds", "aws"]
+    }
+}
+
+bintrayUpload.dependsOn build, sourcesJar, javadocJar
+createReleaseTag.dependsOn bintrayUpload

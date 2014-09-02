@@ -2,3 +2,14 @@ dependencies {
     compile "io.dropwizard:dropwizard-core:${dropwizardVersion}"
     compile "org.apache.jclouds:jclouds-blobstore:1.8.0"
 }
+
+bintray {
+    pkg {
+        name = "dropwizard-jclouds-blobstore"
+        desc = "A library that supports using the Apache jclouds® BlobStore API in Dropwizard applications."
+        labels = ["dropwizard", "jclouds"]
+    }
+}
+
+bintrayUpload.dependsOn build, sourcesJar, javadocJar
+createReleaseTag.dependsOn bintrayUpload
