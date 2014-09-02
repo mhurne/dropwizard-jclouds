@@ -14,4 +14,3 @@ bintray {
 }
 
 bintrayUpload.dependsOn build, sourcesJar, javadocJar
-createReleaseTag.dependsOn bintrayUpload
