@@ -1,0 +1,6 @@
+dependencies {
+    compile project(":dropwizard-jclouds-blobstore")
+    compile "org.apache.jclouds.driver:jclouds-slf4j:1.8.0"
+    compile "com.commercehub.jackson:jackson-datatype-mongo:1.0.0"
+    runtime "com.commercehub.jclouds:jclouds-gridfs-blobstore:1.4.0"
+}

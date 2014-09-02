@@ -1,0 +1,29 @@
+subprojects {
+    apply plugin: "java"
+    apply plugin: "groovy"
+    apply plugin: "maven"
+
+    group = "com.commercehub.dropwizard"
+    sourceCompatibility = "1.7"
+
+    repositories {
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+
+    dependencies {
+        testCompile "org.spockframework:spock-core:1.0-groovy-2.3-SNAPSHOT"
+    }
+
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        from sourceSets.main.allSource
+        classifier "sources"
+        extension "jar"
+    }
+
+    task javadocJar(type: Jar, dependsOn: javadoc) {
+        from javadoc.destinationDir
+        classifier "javadoc"
+        extension "jar"
+    }
+}

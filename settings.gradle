@@ -1,0 +1,1 @@
+include "dropwizard-jclouds-blobstore", "dropwizard-jclouds-filesystem", "dropwizard-jclouds-gridfs", "dropwizard-jclouds-aws-s3"
