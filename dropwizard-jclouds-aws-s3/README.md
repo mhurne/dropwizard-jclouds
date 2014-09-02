@@ -6,7 +6,7 @@ applications.
 
 Currently, it includes a [configuration factory](http://dropwizard.io/manual/core.html#configuration) that can be used
 to configure a `aws-s3`
-[ManagedBlobStoreContext](../dropwizard-jclouds-blobstore/src/main/java/com/commercehub/dropwizard/jclouds/blobstore/ManagedBlobStoreContextFactory.java).
+[ManagedBlobStoreContext](../dropwizard-jclouds-blobstore/src/main/java/com/commercehub/dropwizard/jclouds/blobstore/ManagedBlobStoreContext.java).
 
 # Usage
 
