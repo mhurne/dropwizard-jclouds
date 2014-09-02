@@ -41,15 +41,6 @@ subprojects {
 
     publishing {
         publications {
-            pom.withXml {
-                asNode().dependencies.'*'.findAll() {
-                    it.scope.text() == 'runtime' && project.configurations.compile.allDependencies.find { dep ->
-                        dep.name == it.artifactId.text()
-                    }
-                }.each() {
-                    it.scope*.value = 'compile'
-                }
-            }
             mavenJava(MavenPublication) {
                 from components.java
 
@@ -59,6 +50,16 @@ subprojects {
 
                 artifact javadocJar {
                     classifier "javadoc"
+                }
+
+                pom.withXml {
+                    asNode().dependencies.'*'.findAll() {
+                        it.scope.text() == 'runtime' && project.configurations.compile.allDependencies.find { dep ->
+                            dep.name == it.artifactId.text()
+                        }
+                    }.each() {
+                        it.scope*.value = 'compile'
+                    }
                 }
             }
         }
