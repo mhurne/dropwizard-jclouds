@@ -41,7 +41,7 @@ After publishing the release on Bintray, it's also nice to create a GitHub relea
 *   Select the tag that was created by the Gradle `release` task
 *   Enter a title; typically, this should match the tag (e.g. "1.2.0")
 *   Enter a description of what changed since the previous release (see the
-    [changelog](https://github.com/commercehub-oss/jackson-datatype-mongo/blob/master/CHANGES.md))
+    [changelog](https://github.com/commercehub-oss/dropwizard-jclouds/blob/master/CHANGES.md))
 *   Click the "Publish release" button
 
 # License
