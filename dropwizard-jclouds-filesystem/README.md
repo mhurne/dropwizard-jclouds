@@ -5,7 +5,8 @@ A library that supports use of the [Apache jclouds®](https://jclouds.apache.org
 applications.
 
 Currently, it includes a [configuration factory](http://dropwizard.io/manual/core.html#configuration) that can be used
-to configure a `filesystem` `ManagedBlobStoreContext`.
+to configure a `filesystem`
+[ManagedBlobStoreContext](../dropwizard-jclouds-blobstore/src/main/java/com/commercehub/dropwizard/jclouds/blobstore/ManagedBlobStoreContext.java).
 
 # Usage
 
