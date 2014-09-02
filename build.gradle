@@ -8,6 +8,8 @@ buildscript {
     }
 }
 
+apply plugin: "release"
+
 subprojects {
     apply plugin: "java"
     apply plugin: "groovy"
@@ -54,7 +56,6 @@ subprojects {
         }
     }
 
-    apply plugin: "release"
     apply plugin: "com.jfrog.bintray"
 
     bintray {
