@@ -13,4 +13,3 @@ bintray {
     }
 }
 
-bintrayUpload.dependsOn build, sourcesJar, javadocJar

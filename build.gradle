@@ -74,10 +74,7 @@ subprojects {
         pkg {
             repo = "main"
             userOrg = "commercehub-oss"
-            name = "jackson-datatype-mongo"
-            desc = "A Jackson module to support JSON serialization and deserialization of MongoDB data types"
             licenses = ['Apache-2.0']
-            labels = ["jackson", "mongodb"]
         }
     }
 
