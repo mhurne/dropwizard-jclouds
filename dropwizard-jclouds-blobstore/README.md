@@ -5,9 +5,9 @@ A library that supports using the [Apache jclouds®](https://jclouds.apache.org/
 
 Currently, it includes a [Managed](http://dropwizard.io/manual/core.html#managed-objects)
 [BlobStoreContext](https://jclouds.apache.org/reference/javadoc/1.8.x/org/jclouds/blobstore/BlobStoreContext.html) and
-an associated [configuration factory](http://dropwizard.io/manual/core.html#configuration) interface. In most cases you
-won't want to use this library directly. Instead, you'll use it as a transitive dependency of one or more of the other
-dropwizard-jclouds-* libraries.
+an associated [configuration factory](http://dropwizard.io/manual/core.html#configuration) interface and a
+[health check](http://dropwizard.io/manual/core.html#health-checks). In most cases you won't want to use this library
+directly. Instead, you'll use it as a transitive dependency of one or more of the other dropwizard-jclouds-* libraries.
 
 # Usage
 
@@ -40,6 +40,26 @@ public class App extends Application<AppConfiguration> {
     @Override
     public void run(AppConfiguration config, Environment environment) {
         environment.lifecycle().manage(ManagedBlobStoreContext.of(blobStoreContext));
+    }
+    
+}
+```
+
+And you can register a `BlobStoreHealthCheck`:
+
+```java
+public class App extends Application<AppConfiguration> {
+
+    @Override
+    public void run(AppConfiguration config, Environment environment) {
+        BlobStoreContext context = ...
+        String container = ...
+        String blobName = ...
+        Payload payload = ...
+        String contentType = ...
+        HealthCheck blobStoreHealthCheck = new BlobStoreHealthCheck(
+                context, container, blobName, payload, contentType);
+        environment.healthChecks().register("blobStore", blobStoreHealthCheck);
     }
     
 }

@@ -1,5 +1,8 @@
 # Changelog
 
+*   1.1.0
+    *   Add blobStore health check class
+
 *   1.0.2
     *   Fix issue where dependencies were incorrectly listed in the runtime scope in published Maven POM files
 
