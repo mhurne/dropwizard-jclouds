@@ -33,7 +33,7 @@ The `release` task will prompt you to enter the version to be released, and will
 specified version. It will also upload the release artifacts to Bintray.
 
 After the release artifacts have been uploaded to Bintray, they must be published to become visible to users. See
-Bintray's [Publishing](https://bintray.com/docs/uploads/uploads_publishing.html) documentation for instructions.
+Bintray's [Publishing](https://bintray.com/docs/usermanual/uploads/uploads_publishing.html) documentation for instructions.
 
 After publishing the release on Bintray, it's also nice to create a GitHub release. To do so:
 *   Visit the project's [releases](https://github.com/commercehub-oss/dropwizard-jclouds/releases) page
