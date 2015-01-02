@@ -6,6 +6,8 @@ import org.jclouds.blobstore.BlobStoreContext;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.io.Payload;
 
+import java.util.UUID;
+
 public class BlobStoreHealthCheck extends HealthCheck {
 
     private final BlobStoreContext blobStoreContext;
@@ -16,12 +18,12 @@ public class BlobStoreHealthCheck extends HealthCheck {
 
     public BlobStoreHealthCheck(BlobStoreContext blobStoreContext,
                                 String container,
-                                String blobName,
+                                String blobNamePrefix,
                                 Payload payload,
                                 String contentType) {
         this.blobStoreContext = blobStoreContext;
         this.container = container;
-        this.blobName = blobName;
+        this.blobName = blobNamePrefix + "/" + UUID.randomUUID();
         this.payload = payload;
         this.contentType = contentType;
     }
