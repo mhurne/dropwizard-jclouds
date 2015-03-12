@@ -19,19 +19,34 @@ First, add a dependency to your build file.  Releases are published to
 Gradle:
 
 ```groovy
+...
+repositories {
+    jcenter()
+}
+...
 dependencies {
     compile "com.commercehub.dropwizard:dropwizard-jclouds-aws-s3:2.0.0"
 }
+...
 ```
 
 Maven:
 
 ```xml
+...
+<repositories>
+  <repository>
+    <id>jcenter</id>
+    <url>http://jcenter.bintray.com</url>
+  </repository>
+</repositories>
+...
 <dependency>
   <groupId>com.commercehub.dropwizard</groupId>
   <artifactId>dropwizard-jclouds-aws-s3</artifactId>
   <version>2.0.0</version>
 </dependency>
+...
 ```
 
 If you're using the [Gradle Shadow Plugin](https://github.com/johnrengelman/shadow) or the
