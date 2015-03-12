@@ -1,5 +1,8 @@
 # Changelog
 
+*   2.0.0
+    *   Rewrite BlobStoreHealthCheck to simply check whether a given container exists rather than attempting operations on a blob, which has proven to be unreliable
+
 *   1.2.0
     *   Update BlobStoreHealthCheck to take a `blobNamePrefix` instead of a complete `blobName` so that health checks in multi-node installations don't interfere with each other
 
