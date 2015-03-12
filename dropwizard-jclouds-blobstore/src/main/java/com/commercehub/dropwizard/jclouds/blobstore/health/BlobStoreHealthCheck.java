@@ -13,8 +13,8 @@ public class BlobStoreHealthCheck extends HealthCheck {
 
     public BlobStoreHealthCheck(BlobStoreContext blobStoreContext, String container) {
         this.blobStoreContext = checkNotNull(blobStoreContext);
-        this.container = checkNotNull(container).trim();
-        checkArgument(!this.container.isEmpty());
+        this.container = checkNotNull(container);
+        checkArgument(!this.container.isEmpty() && !this.container.trim().isEmpty());
     }
 
     @Override
