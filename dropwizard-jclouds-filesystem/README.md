@@ -17,7 +17,7 @@ Gradle:
 
 ```groovy
 dependencies {
-    compile "com.commercehub.dropwizard:dropwizard-jclouds-filesystem:1.0.0"
+    compile "com.commercehub.dropwizard:dropwizard-jclouds-filesystem:2.0.0"
 }
 ```
 
@@ -27,7 +27,7 @@ Maven:
 <dependency>
   <groupId>com.commercehub.dropwizard</groupId>
   <artifactId>dropwizard-jclouds-filesystem</artifactId>
-  <version>1.0.0</version>
+  <version>2.0.0</version>
 </dependency>
 ```
 
