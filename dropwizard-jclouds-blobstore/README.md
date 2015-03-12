@@ -1,4 +1,6 @@
-# Overview
+# dropwizard-jclouds-blobstore
+
+[![Build Status](https://travis-ci.org/commercehub-oss/dropwizard-jclouds.svg?branch=master)](https://travis-ci.org/commercehub-oss/dropwizard-jclouds)
 
 A library that supports using the [Apache jclouds®](https://jclouds.apache.org/) BlobStore API in
 [Dropwizard](http://dropwizard.io/) applications.

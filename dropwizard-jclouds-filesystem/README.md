@@ -1,4 +1,6 @@
-# Overview
+# dropwizard-jclouds-filesystem
+
+[![Build Status](https://travis-ci.org/commercehub-oss/dropwizard-jclouds.svg?branch=master)](https://travis-ci.org/commercehub-oss/dropwizard-jclouds)
 
 A library that supports use of the [Apache jclouds®](https://jclouds.apache.org/)
 [filesystem BlobStore API](http://jclouds.apache.org/guides/filesystem/) in [Dropwizard](http://dropwizard.io/)

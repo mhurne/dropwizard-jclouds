@@ -1,4 +1,6 @@
-# Overview
+# dropwizard-jclouds-aws-s3
+
+[![Build Status](https://travis-ci.org/commercehub-oss/dropwizard-jclouds.svg?branch=master)](https://travis-ci.org/commercehub-oss/dropwizard-jclouds)
 
 A library that supports use of the [Apache jclouds®](https://jclouds.apache.org/)
 [aws-s3 BlobStore provider](https://jclouds.apache.org/guides/aws-s3/) in [Dropwizard](http://dropwizard.io/)
