@@ -1,6 +1,7 @@
 # dropwizard-jclouds-gridfs
 
 [![Build Status](https://travis-ci.org/commercehub-oss/dropwizard-jclouds.svg?branch=master)](https://travis-ci.org/commercehub-oss/dropwizard-jclouds)
+[ ![Download](https://api.bintray.com/packages/commercehub-oss/main/dropwizard-jclouds-gridfs/images/download.svg) ](https://bintray.com/commercehub-oss/main/dropwizard-jclouds-gridfs/_latestVersion)
 
 A library that supports use of the [Apache jclouds®](https://jclouds.apache.org/)
 [MongoDB GridFS BlobStore provider](https://github.com/commercehub-oss/jclouds-gridfs-blobstore) in
