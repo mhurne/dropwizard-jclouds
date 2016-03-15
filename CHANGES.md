@@ -1,5 +1,8 @@
 # Changelog
 
+*   3.0.0
+    *   Update dropwizard version to 0.9.2 
+    
 *   2.0.0
     *   Rewrite BlobStoreHealthCheck to simply check whether a given container exists rather than attempting operations on a blob, which has proven to be unreliable
 
