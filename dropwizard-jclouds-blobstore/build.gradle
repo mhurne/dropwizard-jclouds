@@ -1,6 +1,6 @@
 dependencies {
     compile "io.dropwizard:dropwizard-core:${dropwizardVersion}"
-    compile "org.apache.jclouds:jclouds-blobstore:1.8.0"
+    compile "org.apache.jclouds:jclouds-blobstore:${jcloudsVersion}"
 }
 
 bintray {

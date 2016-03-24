@@ -1,5 +1,9 @@
 # Changelog
 
+
+*   4.0.0
+    *   Update jclouds version to 1.9.2. AsyncBlobStore is no longer supported. 
+    
 *   3.0.0
     *   Update dropwizard version to 0.9.2 
     
