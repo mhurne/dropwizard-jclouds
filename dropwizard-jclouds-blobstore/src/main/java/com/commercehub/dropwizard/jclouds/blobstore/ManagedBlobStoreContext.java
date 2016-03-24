@@ -19,7 +19,6 @@ package com.commercehub.dropwizard.jclouds.blobstore;
 import com.google.common.reflect.TypeToken;
 import io.dropwizard.lifecycle.Managed;
 import org.jclouds.Context;
-import org.jclouds.blobstore.AsyncBlobStore;
 import org.jclouds.blobstore.BlobRequestSigner;
 import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
@@ -63,12 +62,6 @@ public class ManagedBlobStoreContext implements BlobStoreContext, Managed {
     @Override
     public BlobRequestSigner getSigner() {
         return context.getSigner();
-    }
-
-    @Override
-    @Deprecated
-    public AsyncBlobStore getAsyncBlobStore() {
-        return context.getAsyncBlobStore();
     }
 
     @Override

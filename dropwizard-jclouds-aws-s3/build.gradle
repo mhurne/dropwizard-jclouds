@@ -1,7 +1,7 @@
 dependencies {
     compile project(":dropwizard-jclouds-blobstore")
-    compile "org.apache.jclouds.driver:jclouds-slf4j:1.8.0"
-    runtime "org.apache.jclouds.provider:aws-s3:1.8.0"
+    compile "org.apache.jclouds.driver:jclouds-slf4j:${jcloudsVersion}"
+    runtime "org.apache.jclouds.provider:aws-s3:${jcloudsVersion}"
 }
 
 bintray {
